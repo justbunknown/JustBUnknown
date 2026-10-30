@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { ArrowRight, Cpu, Lock, SlidersHorizontal, Scale, CheckCircle2 } from 'lucide-react';
-import asicSiliconDieImage from '../assets/images/asic_silicon_die_1793328090798.jpg';
-import airgapResearchLabImage from '../assets/images/airgap_research_lab_1793328091194.jpg';
 import { HISTORICAL_ANALOGUES } from '../data/planRData';
 
 interface HeroSectionProps {
@@ -69,7 +67,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex flex-col bg-stone-100/70 dark:bg-stone-900/60 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
             <div className="relative rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 aspect-[16/9] bg-stone-950">
               <img
-                src={asicSiliconDieImage}
+                src="./asic_silicon_die_1793328090798.jpg"
                 alt="Fixed-Function Neural ASIC die with etched immutable synaptic pathways"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -97,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex flex-col bg-stone-100/70 dark:bg-stone-900/60 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
             <div className="relative rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 aspect-[16/9] bg-stone-950">
               <img
-                src={airgapResearchLabImage}
+                src="./airgap_research_lab_1793328091194.jpg"
                 alt="Airgapped Frontier AI research facility with 12-hour latency buffer"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

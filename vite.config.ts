@@ -5,10 +5,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: './', // ◄— Allows the asset paths to adapt to any subdirectory dynamically
+  base: '/JustBUnknown/', // ◄— Locks down the sub-folder path for GitHub Pages asset routing
   build: {
-    outDir: '.', // ◄— Forces Vite to compile index.html directly into your main project root folder
-    emptyOutDir: false, // Prevents your source files from being accidentally deleted during build
+    outDir: 'dist', // ◄— Outputs cleanly to the default standard dist folder
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
