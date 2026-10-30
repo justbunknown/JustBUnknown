@@ -30,7 +30,10 @@ jobs:
           node-version: 24 # ◄— Upgraded to active non-deprecated LTS runtime
 
       - name: Install System Dependencies
-        run: npm install --legacy-peer-deps # ◄— Forces the server to bypass package peer mismatches
+        run: |
+          npm install --legacy-peer-deps
+          npm run clean || rm -rf dist
+
 
 
       - name: Compile Distribution Target (Vite Build)
