@@ -1,0 +1,8 @@
+{
+  "name": "JustBUnknown: Hardware Separation for Frontier AI",
+  "description": "An interactive architectural analysis, threat simulator, and policy framework for separating frontier AI training from deployment using fixed-function ASICs and institutional firewalls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
