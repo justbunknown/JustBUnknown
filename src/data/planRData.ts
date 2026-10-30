@@ -187,6 +187,24 @@ export const SOVEREIGN_TREATY_CLAUSES = [
     title: 'Dynamic Compute Threshold Agility',
     body: 'The International Compute Authority (ICA) maintains statutory flexibility to dynamically lower verified compute tracking thresholds. If algorithmic or architectural breakthroughs decrease the raw physical compute footprint required to trigger an uncontrolled intelligence takeoff, the ICA shall immediately scale tracking mandates downward to include mid-tier consumer or distributed hardware matrices.',
     impact: 'Neutralizes the efficiency overhang by preventing rogue actors from training dangerous models on low-spec hardware.'
+  },
+  {
+    clauseNumber: 'Article VII Section 1',
+    title: 'Skin-in-the-Game Deferred Equity Matrix (Talent Retention)',
+    body: 'Abandons the pure non-profit restriction for AI R&D organizations. Engineers, researchers, and founders retain high-upside corporate equity and performance stock options, but these assets are subjected to an un-hedgeable 10-year vesting cliff. Vesting events are strictly conditioned on multi-lateral, audited safety milestones and zero-leakage verification. Any covert un-audited training run or baseline protocol violation triggers mandatory 100% equity clawbacks, immediate liquidation of options, and automatic asset forfeiture to the state treasury.',
+    impact: 'Prevents talent flight to black markets by ensuring the path to generational wealth exists exclusively inside the containment zone, wrapped in absolute personal financial liability.'
+  },
+  {
+    clauseNumber: 'Article VIII Section 4',
+    title: 'Layered Remote Attestation & Sovereign Whistleblower Bounties',
+    body: 'Replaces sole reliance on a single-point-of-failure 60-second heartbeat with a decentralized, multi-layered validation architecture. Every certified silicon die embeds independent, multi-national hardware roots of trust that report concurrently to independent allied intelligence commands. Furthermore, an international fund establishes a permanent $50,000,000 hard-currency Whistleblower Bounty matrix, accompanied by automatic sovereign citizenship protection, for any engineer exposing clandestine general compute builds or firmware hypervisor bypasses.',
+    impact: 'Transforms verification from a slow, bureaucratic diplomatic consensus model into an aggressive, industrialized signals-intelligence operation.'
+  },
+  {
+    clauseNumber: 'Article IX Section 2',
+    title: 'Asymmetric Supply-Chain Weaponization & Kinetic Deterrence',
+    body: 'Acknowledges advanced lithography as a temporary geopolitical window rather than a permanent fortress. Signatory nations establish a unified industrial mobilization fund to accelerate alternative lithography r&d while actively preparing offensive and kinetic cyber/physical plans to neutralize unauthorized sub-nanometer foundry infrastructure appearing in non-compliant jurisdictions.',
+    impact: 'Frames hardware governance not as a polite diplomatic agreement, but as an aggressive, temporary tech-monopoly lead to be actively weaponized and militarily defended.'
   }
 
 ];
@@ -245,6 +263,12 @@ export const POLICY_COMPARISON = [
     planA: 'Critical Failure: Software optimizations reduce the compute requirement for superintelligence, allowing dangerous agents to escape using low-spec consumer clusters.',
     planS: 'Stagnant: Rigid compute ceilings are slowly bypasses by optimization breakthroughs, rendering the fixed treaty limits mathematically obsolete.',
     planR: 'Dynamic Agility: Grants the ICA legal authority to dynamically scale tracking limits downward, automatically capturing distributed consumer or mid-tier hardware matrices.'
+  },
+  {
+    metric: 'Talent Retention & Capital Arbitration',
+    planA: 'High Drift: Elite engineers move fluidly between labs chasing massive capitalization loops, compounding acceleration pressure.',
+    planS: 'Brain Drain: Total prohibitions force elite computer science talent to migrate underground, establishing hidden clusters in shadow states.',
+    planR: 'Constrained Wealth: Retains high-upside equity but traps it behind a 10-year safety-milestone cliff, aligning human greed directly with civilizational containment.',
   }
 
 ];
