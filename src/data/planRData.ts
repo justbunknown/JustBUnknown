@@ -176,6 +176,19 @@ export const SOVEREIGN_TREATY_CLAUSES = [
     body: 'To ensure industrial agility without compromising safety invariants, deployment hardware shall standardize on a dual-memory split: (1) The Static Silicon Connectome, containing frozen reasoning and world models, physically incapable of gradient updates; and (2) The Dynamic Context Fabric, a high-bandwidth Hardware RAG Cache supporting up to 10 million tokens of volatile enterprise context, personal telemetry, and working memory.',
     impact: 'Delivers infinite adaptability and real-time fine-tuning in context while keeping core model parameters 100% immutable.',
   },
+    {
+    clauseNumber: 'Article V Section 1',
+    title: 'Internal Containment Retrofit Accord (Legacy GPU Registration)',
+    body: 'All high-performance general-purpose compute hardware (including legacy architectures matching H100, B200 profiles) manufactured prior to Treaty ratification must undergo mandatory sovereign registration. These physical chips must be retrofitted with an immutable, cryptographically signed software firmware hypervisor layer and subjected to automated grid power and thermal signature auditing. Unregistered or altered legacy clusters exceeding a localized power threshold of 500kW trigger automated domestic non-proliferation containment protocols.',
+    impact: 'Closes the black-market loophole by tracking and freezing legacy hardware pools already out in the wild.'
+  },
+  {
+    clauseNumber: 'Article VI Section 3',
+    title: 'Dynamic Compute Threshold Agility',
+    body: 'The International Compute Authority (ICA) maintains statutory flexibility to dynamically lower verified compute tracking thresholds. If algorithmic or architectural breakthroughs decrease the raw physical compute footprint required to trigger an uncontrolled intelligence takeoff, the ICA shall immediately scale tracking mandates downward to include mid-tier consumer or distributed hardware matrices.',
+    impact: 'Neutralizes the efficiency overhang by preventing rogue actors from training dangerous models on low-spec hardware.'
+  }
+
 ];
 
 export const POLICY_COMPARISON = [
@@ -215,6 +228,13 @@ export const POLICY_COMPARISON = [
     planS: 'Existing datacenter clusters remain a latent powder keg.',
     planR: 'Neutralized: External compute is fixed silicon; rogue models cannot retrain or adapt on ASICs.',
   },
+    {
+    metric: 'Legacy Clusters & Algorithmic Efficiency Leaps',
+    planA: 'Fatal Deficit: Rogue training leverages existing unmonitored GPU clouds or algorithmic optimizations to slip under global radar.',
+    planS: 'Blind Spot: Underground actors optimize old hardware pools or distribute calculations across consumer arrays.',
+    planR: 'Ironclad Containment: Legacy hardware is locked by hypervisors and monitored via power grids, while the ICA dynamically scales tracking limits down to match algorithmic efficiency leaps.',
+  }
+
 ];
 
 export const HISTORICAL_ANALOGUES = [

@@ -9,12 +9,14 @@ export const TakeoffSimulator: React.FC = () => {
   const [financialIncentive, setFinancialIncentive] = useState<number>(0); // %
   const [latencyHours, setLatencyHours] = useState<number>(12); // hours
   const [antiDogfooding, setAntiDogfooding] = useState<boolean>(true);
-  
+
   // Coercive Ironclad Levers
   const [heartbeatLeaseActive, setHeartbeatLeaseActive] = useState<boolean>(true);
   const [asicEconomicSubsidy, setAsicEconomicSubsidy] = useState<number>(85); // 1x to 100x efficiency multiplier
   const [computeTariffActive, setComputeTariffActive] = useState<boolean>(true);
   const [dualMemoryRagStandard, setDualMemoryRagStandard] = useState<boolean>(true);
+  const [legacyRetrofitAccordActive, setLegacyRetrofitAccordActive] = useState<boolean>(true); // ◄— Insert
+  const [computeThresholdAgilityActive, setComputeThresholdAgilityActive] = useState<boolean>(true); // ◄— Insert
   const [testHostileSeizure, setTestHostileSeizure] = useState<boolean>(false);
 
   const [currentMonth, setCurrentMonth] = useState<number>(0);
@@ -37,6 +39,8 @@ export const TakeoffSimulator: React.FC = () => {
       setAsicEconomicSubsidy(1);
       setComputeTariffActive(false);
       setDualMemoryRagStandard(false);
+      setLegacyRetrofitAccordActive(false);
+      setComputeThresholdAgilityActive(false);
     } else if (newStrategy === 'planS') {
       setRecursiveRate(1);
       setComputeOverhang(50);
@@ -47,6 +51,8 @@ export const TakeoffSimulator: React.FC = () => {
       setAsicEconomicSubsidy(1);
       setComputeTariffActive(false);
       setDualMemoryRagStandard(false);
+      setLegacyRetrofitAccordActive(false);
+      setComputeThresholdAgilityActive(false);
     } else {
       // JustBUnknown (Ironclad Coercive Architecture)
       setRecursiveRate(2);
@@ -58,6 +64,8 @@ export const TakeoffSimulator: React.FC = () => {
       setAsicEconomicSubsidy(85);
       setComputeTariffActive(true);
       setDualMemoryRagStandard(true);
+      setLegacyRetrofitAccordActive(true);
+      setComputeThresholdAgilityActive(true);
     }
   };
 
@@ -295,21 +303,19 @@ export const TakeoffSimulator: React.FC = () => {
         <div className="flex items-center gap-1 p-1 bg-stone-200 dark:bg-stone-800 rounded-lg shrink-0">
           <button
             onClick={() => setViewMode('single')}
-            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${
-              viewMode === 'single'
+            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${viewMode === 'single'
                 ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
-            }`}
+              }`}
           >
             Parametric Sandbox
           </button>
           <button
             onClick={() => setViewMode('compare')}
-            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${
-              viewMode === 'compare'
+            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${viewMode === 'compare'
                 ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
-            }`}
+              }`}
           >
             3-Way Comparative View
           </button>
@@ -327,31 +333,28 @@ export const TakeoffSimulator: React.FC = () => {
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => handleStrategyChange('planA')}
-                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${
-                    strategy === 'planA'
+                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planA'
                       ? 'bg-red-50 dark:bg-red-950/40 border-red-500 text-red-700 dark:text-red-300 shadow-sm'
                       : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
-                  }`}
+                    }`}
                 >
                   Plan A (Status Quo)
                 </button>
                 <button
                   onClick={() => handleStrategyChange('planS')}
-                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${
-                    strategy === 'planS'
+                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planS'
                       ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
                       : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
-                  }`}
+                    }`}
                 >
                   Plan S (Pause)
                 </button>
                 <button
                   onClick={() => handleStrategyChange('planR')}
-                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${
-                    strategy === 'planR'
+                  className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planR'
                       ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-700 dark:text-emerald-300 shadow-sm'
                       : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
-                  }`}
+                    }`}
                 >
                   JustBUnknown (ASIC Split)
                 </button>
@@ -439,14 +442,12 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setAntiDogfooding(!antiDogfooding)}
-                  className={`w-12 h-6 flex items-center rounded-full p-1 transition-colors cursor-pointer ${
-                    antiDogfooding ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
-                  }`}
+                  className={`w-12 h-6 flex items-center rounded-full p-1 transition-colors cursor-pointer ${antiDogfooding ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                    }`}
                 >
                   <div
-                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${
-                      antiDogfooding ? 'translate-x-6' : 'translate-x-0'
-                    }`}
+                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${antiDogfooding ? 'translate-x-6' : 'translate-x-0'
+                      }`}
                   />
                 </button>
               </div>
@@ -477,14 +478,12 @@ export const TakeoffSimulator: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setHeartbeatLeaseActive(!heartbeatLeaseActive)}
-                    className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${
-                      heartbeatLeaseActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
-                    }`}
+                    className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${heartbeatLeaseActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                      }`}
                   >
                     <div
-                      className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${
-                        heartbeatLeaseActive ? 'translate-x-5' : 'translate-x-0'
-                      }`}
+                      className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${heartbeatLeaseActive ? 'translate-x-5' : 'translate-x-0'
+                        }`}
                     />
                   </button>
                 </div>
@@ -492,11 +491,10 @@ export const TakeoffSimulator: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setTestHostileSeizure(!testHostileSeizure)}
-                    className={`w-full py-1.5 px-2 rounded text-[11px] font-mono font-medium transition-colors cursor-pointer border ${
-                      testHostileSeizure
+                    className={`w-full py-1.5 px-2 rounded text-[11px] font-mono font-medium transition-colors cursor-pointer border ${testHostileSeizure
                         ? 'bg-red-600 text-white border-red-700'
                         : 'bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 border-stone-300 dark:border-stone-700 hover:bg-stone-50'
-                    }`}
+                      }`}
                   >
                     {testHostileSeizure ? '⚠️ Heartbeat Cut: Silicon Bricked' : '⚡ Simulate Hostile Seizure Breach'}
                   </button>
@@ -536,14 +534,12 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setComputeTariffActive(!computeTariffActive)}
-                  className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${
-                    computeTariffActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
-                  }`}
+                  className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${computeTariffActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                    }`}
                 >
                   <div
-                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${
-                      computeTariffActive ? 'translate-x-5' : 'translate-x-0'
-                    }`}
+                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${computeTariffActive ? 'translate-x-5' : 'translate-x-0'
+                      }`}
                   />
                 </button>
               </div>
@@ -561,17 +557,60 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setDualMemoryRagStandard(!dualMemoryRagStandard)}
-                  className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${
-                    dualMemoryRagStandard ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
-                  }`}
+                  className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${dualMemoryRagStandard ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                    }`}
                 >
                   <div
-                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${
-                      dualMemoryRagStandard ? 'translate-x-5' : 'translate-x-0'
-                    }`}
+                    className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${dualMemoryRagStandard ? 'translate-x-5' : 'translate-x-0'
+                      }`}
                   />
                 </button>
               </div>
+            </div>
+            {/* Coercive Lever 5: Legacy GPU Retrofit Accord */}
+            <div className="flex items-center justify-between mt-4">
+              <div>
+                <div className="text-xs font-semibold text-stone-900 dark:text-stone-100">
+                  Legacy GPU Retrofit Accord
+                </div>
+                <div className="text-[11px] text-stone-500">
+                  Mandatory registration & hypervisor lock
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setLegacyRetrofitAccordActive(!legacyRetrofitAccordActive)}
+                className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${legacyRetrofitAccordActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                  }`}
+              >
+                <div
+                  className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${legacyRetrofitAccordActive ? 'translate-x-5' : 'translate-x-0'
+                    }`}
+                />
+              </button>
+            </div>
+
+            {/* Coercive Lever 6: Compute Threshold Agility */}
+            <div className="flex items-center justify-between mt-4">
+              <div>
+                <div className="text-xs font-semibold text-stone-900 dark:text-stone-100">
+                  Compute Threshold Agility
+                </div>
+                <div className="text-[11px] text-stone-500">
+                  Dynamic threshold scaling via ICA mandate
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setComputeThresholdAgilityActive(!computeThresholdAgilityActive)}
+                className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${computeThresholdAgilityActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                  }`}
+              >
+                <div
+                  className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${computeThresholdAgilityActive ? 'translate-x-5' : 'translate-x-0'
+                    }`}
+                />
+              </button>
             </div>
 
             {/* Strategy Explanatory Note */}
@@ -675,13 +714,12 @@ export const TakeoffSimulator: React.FC = () => {
                 <div className="bg-white/60 dark:bg-stone-900/80 p-3.5 rounded-lg border border-stone-200/80 dark:border-stone-800">
                   <div className="text-[11px] font-mono uppercase text-stone-500">Takeover Risk</div>
                   <div
-                    className={`text-xl font-bold font-mono tabular-nums mt-1 ${
-                      currentTick.takeoverProbability > 50
+                    className={`text-xl font-bold font-mono tabular-nums mt-1 ${currentTick.takeoverProbability > 50
                         ? 'text-red-600 dark:text-red-400'
                         : currentTick.takeoverProbability > 20
-                        ? 'text-amber-600 dark:text-amber-400'
-                        : 'text-emerald-600 dark:text-emerald-400'
-                    }`}
+                          ? 'text-amber-600 dark:text-amber-400'
+                          : 'text-emerald-600 dark:text-emerald-400'
+                      }`}
                   >
                     {currentTick.takeoverProbability === 0 ? '0.00%' : `${currentTick.takeoverProbability}%`}
                   </div>
@@ -800,10 +838,9 @@ export const TakeoffSimulator: React.FC = () => {
                 </span>
                 <p className="text-stone-800 dark:text-stone-200 font-serif italic text-sm">
                   {currentTick.eventLog ||
-                    `Month ${currentMonth}: Operations proceeding according to ${
-                      strategy === 'planR'
-                        ? 'JustBUnknown ASIC protocol. Zero gradient execution outside airgap.'
-                        : strategy === 'planA'
+                    `Month ${currentMonth}: Operations proceeding according to ${strategy === 'planR'
+                      ? 'JustBUnknown ASIC protocol. Zero gradient execution outside airgap.'
+                      : strategy === 'planA'
                         ? 'Status Quo competitive race. Equity holders anticipate Singularity.'
                         : 'Plan S global research moratorium.'
                     }`}

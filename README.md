@@ -44,7 +44,8 @@ All technical alignment problems can be rolled into Point A. Point A on its own,
 
 ---
 
-## 🛠️ The Coercive Utility Matrix (Four Invariants)
+## 🛠️ The Coercive Utility Matrix (Six Invariants)
+
 
 To eliminate the classic Defection Hazard (the game-theoretic fear that a rival superpower will run past safety rules covertly) and force global alignment compliance, **JustBUnknown** implements a hardware-level treaty architecture:
 
@@ -52,6 +53,9 @@ To eliminate the classic Defection Hazard (the game-theoretic fear that a rival 
 *   **The ASIC Subsidy Engine (Article II):** By omitting backpropagation logic gates, gradient arithmetic logic units (ALUs), and tensor compilation hardware on deployment dice, fixed inference ASICs achieve a **100x cost-per-token and energy efficiency advantage** over general-purpose architectures (Nvidia-style GPUs). State-backed transition funds subsidize these chips, rendering traditional, un-etched general datacenter compute cost-prohibitive for standard enterprise application, forcing voluntary market compliance via pure commercial self-interest.
 *   **The Semiconductor Blockade Alliance (Article III):** Non-signatory jurisdictions attempting to amass general-purpose training compute clusters above the *Malicious Overhang Threshold* (10^24 FLOPs) face an automated, multilateral total embargo on advanced semiconductor packaging, sub-nanometer lithography nodes (ASML EUV systems), and specialized chemical components, backed by a mandatory 100% Compute Tariff on outbound digital exports.
 *   **The "Hyper-Brained" RAG Standard (Article IV):** Bypasses the static weight constraint by linking the immutable silicon connectome (frozen world logic) to a dedicated 10-million-token volatile *Hardware Context Fabric*, enabling enterprise dynamic memory adaptation, robotic sensor telemetry ingestion, and infinite document customization without altering baseline neural matrices.
+*   **Internal Containment Retrofit Accord (Article V):** All high-performance general-purpose compute hardware (including legacy architectures matching H100, B200 profiles) manufactured prior to Treaty ratification must undergo mandatory sovereign registration. These physical chips must be retrofitted with an immutable, cryptographically signed software firmware hypervisor layer and subjected to automated grid power and thermal signature auditing. Unregistered or altered legacy clusters exceeding a localized power threshold of 500kW trigger automated domestic non-proliferation containment protocols.
+*   **Dynamic Compute Threshold Agility (Article VI):** The International Compute Authority (ICA) maintains statutory flexibility to dynamically lower verified compute tracking thresholds. If algorithmic or architectural breakthroughs decrease the raw physical compute footprint required to trigger an uncontrolled intelligence takeoff, the ICA shall immediately scale tracking mandates downward to include mid-tier consumer or distributed hardware matrices.
+
 
 ---
 
