@@ -233,6 +233,18 @@ export const POLICY_COMPARISON = [
     planA: 'Fatal Deficit: Rogue training leverages existing unmonitored GPU clouds or algorithmic optimizations to slip under global radar.',
     planS: 'Blind Spot: Underground actors optimize old hardware pools or distribute calculations across consumer arrays.',
     planR: 'Ironclad Containment: Legacy hardware is locked by hypervisors and monitored via power grids, while the ICA dynamically scales tracking limits down to match algorithmic efficiency leaps.',
+  },
+  {
+    metric: 'Legacy Cluster Proliferation (Article V)',
+    planA: 'High Risk: Sovereign actors can stitch together massive, hidden networks of existing, unregulated GPUs (H100/B200 models) to train rogue models completely off-grid.',
+    planS: 'Blind Spot: Treaty bans new hardware production but leaves millions of pre-existing units floating globally in a shadow computing black market.',
+    planR: 'Ironclad Containment: Mandates a physical registry and cryptographically signed software firmware hypervisors on all existing hardware, backed by automated grid-power monitoring.'
+  },
+  {
+    metric: 'Algorithmic Efficiency Overhang (Article VI)',
+    planA: 'Critical Failure: Software optimizations reduce the compute requirement for superintelligence, allowing dangerous agents to escape using low-spec consumer clusters.',
+    planS: 'Stagnant: Rigid compute ceilings are slowly bypasses by optimization breakthroughs, rendering the fixed treaty limits mathematically obsolete.',
+    planR: 'Dynamic Agility: Grants the ICA legal authority to dynamically scale tracking limits downward, automatically capturing distributed consumer or mid-tier hardware matrices.'
   }
 
 ];
