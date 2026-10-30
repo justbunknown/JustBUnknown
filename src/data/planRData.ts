@@ -205,6 +205,12 @@ export const SOVEREIGN_TREATY_CLAUSES = [
     title: 'Asymmetric Supply-Chain Weaponization & Kinetic Deterrence',
     body: 'Acknowledges advanced lithography as a temporary geopolitical window rather than a permanent fortress. Signatory nations establish a unified industrial mobilization fund to accelerate alternative lithography r&d while actively preparing offensive and kinetic cyber/physical plans to neutralize unauthorized sub-nanometer foundry infrastructure appearing in non-compliant jurisdictions.',
     impact: 'Frames hardware governance not as a polite diplomatic agreement, but as an aggressive, temporary tech-monopoly lead to be actively weaponized and militarily defended.'
+  },
+  {
+    clauseNumber: 'Article X Section 5',
+    title: 'The Algorithmic Hermetic Seal (Zero-Knowledge Telemetry)',
+    body: 'Acknowledges that model weights and training recipes can leak through human or digital vectors. All frontier R&D organizations must operate under a strict "Hermetic Seal": complete isolation of model outputs using advanced Zero-Knowledge (ZK) cryptography. Deployment networks are prohibited from probing model structures; they may only interact with heavily noise-injected, differentially private API endpoints monitored by automated, sovereign-run security nodes.',
+    impact: 'Closes the final knowledge-leakage loop. It ensures that even if a model exists inside a physical facility, its underlying intellectual blueprints cannot be reverse-engineered, exfiltrated, or reconstructed by external state intelligence.'
   }
 
 ];

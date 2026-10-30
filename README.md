@@ -44,7 +44,7 @@ All technical alignment problems can be rolled into Point A. Point A on its own,
 
 ---
 
-## 🛠️ The Coercive Utility Matrix (Nine Invariants)
+## 🛠️ The Coercive Utility Matrix (Ten Invariants)
 
 
 To eliminate the classic Defection Hazard (the game-theoretic fear that a rival superpower will run past safety rules covertly) and force global alignment compliance, **JustBUnknown** implements a hardware-level treaty architecture:
@@ -58,6 +58,7 @@ To eliminate the classic Defection Hazard (the game-theoretic fear that a rival 
 *   **Skin-in-the-Game Deferred Equity Matrix (Article VII):** Abandons the pure non-profit restriction for AI R&D organizations. Engineers, researchers, and founders retain high-upside corporate equity and performance stock options, but these assets are subjected to an un-hedgeable 10-year vesting cliff. Vesting events are strictly conditioned on multi-lateral, audited safety milestones and zero-leakage verification. Any covert un-audited training run or baseline protocol violation triggers mandatory 100% equity clawbacks, immediate liquidation of options, and automatic asset forfeiture to the state treasury.
 *   **Layered Remote Attestation & Sovereign Whistleblower Bounties (Article VIII):** Replaces sole reliance on a single-point-of-failure 60-second heartbeat with a decentralized, multi-layered validation architecture. Every certified silicon die embeds independent, multi-national hardware roots of trust that report concurrently to independent allied intelligence commands. Furthermore, an international fund establishes a permanent $50,000,000 hard-currency Whistleblower Bounty matrix, accompanied by automatic sovereign citizenship protection, for any engineer exposing clandestine general compute builds or firmware hypervisor bypasses.
 *   **Asymmetric Supply-Chain Weaponization & Kinetic Deterrence (Article IX):** Acknowledges advanced lithography as a temporary geopolitical window rather than a permanent fortress. Signatory nations establish a unified industrial mobilization fund to accelerate alternative lithography R&D while actively preparing offensive and kinetic cyber/physical plans to neutralize unauthorized sub-nanometer foundry infrastructure appearing in non-compliant jurisdictions.
+*   **The Algorithmic Hermetic Seal (Article X):** Blueprints and training weights are locked using advanced Zero-Knowledge (ZK) cryptography and heavy differential privacy. Deployment systems are legally and physically blocked from direct neural matrix interaction, rendering reverse-engineering or structural intelligence exfiltration by hostile states mathematically impossible.
 
 
 ---
