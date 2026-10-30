@@ -30,7 +30,8 @@ jobs:
           node-version: 24 # ◄— Upgraded to active non-deprecated LTS runtime
 
       - name: Install System Dependencies
-        run: npm install # ◄— Switched from 'ci' to clean fallback install to handle uncommitted lockfiles
+        run: npm install --legacy-peer-deps # ◄— Forces the server to bypass package peer mismatches
+
 
       - name: Compile Distribution Target (Vite Build)
         run: npm run build
