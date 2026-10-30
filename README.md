@@ -44,7 +44,7 @@ All technical alignment problems can be rolled into Point A. Point A on its own,
 
 ---
 
-## 🛠️ The Coercive Utility Matrix (Six Invariants)
+## 🛠️ The Coercive Utility Matrix (Nine Invariants)
 
 
 To eliminate the classic Defection Hazard (the game-theoretic fear that a rival superpower will run past safety rules covertly) and force global alignment compliance, **JustBUnknown** implements a hardware-level treaty architecture:
@@ -55,6 +55,9 @@ To eliminate the classic Defection Hazard (the game-theoretic fear that a rival 
 *   **The "Hyper-Brained" RAG Standard (Article IV):** Bypasses the static weight constraint by linking the immutable silicon connectome (frozen world logic) to a dedicated 10-million-token volatile *Hardware Context Fabric*, enabling enterprise dynamic memory adaptation, robotic sensor telemetry ingestion, and infinite document customization without altering baseline neural matrices.
 *   **Internal Containment Retrofit Accord (Article V):** All high-performance general-purpose compute hardware (including legacy architectures matching H100, B200 profiles) manufactured prior to Treaty ratification must undergo mandatory sovereign registration. These physical chips must be retrofitted with an immutable, cryptographically signed software firmware hypervisor layer and subjected to automated grid power and thermal signature auditing. Unregistered or altered legacy clusters exceeding a localized power threshold of 500kW trigger automated domestic non-proliferation containment protocols.
 *   **Dynamic Compute Threshold Agility (Article VI):** The International Compute Authority (ICA) maintains statutory flexibility to dynamically lower verified compute tracking thresholds. If algorithmic or architectural breakthroughs decrease the raw physical compute footprint required to trigger an uncontrolled intelligence takeoff, the ICA shall immediately scale tracking mandates downward to include mid-tier consumer or distributed hardware matrices.
+*   **Skin-in-the-Game Deferred Equity Matrix (Article VII):** Abandons the pure non-profit restriction for AI R&D organizations. Engineers, researchers, and founders retain high-upside corporate equity and performance stock options, but these assets are subjected to an un-hedgeable 10-year vesting cliff. Vesting events are strictly conditioned on multi-lateral, audited safety milestones and zero-leakage verification. Any covert un-audited training run or baseline protocol violation triggers mandatory 100% equity clawbacks, immediate liquidation of options, and automatic asset forfeiture to the state treasury.
+*   **Layered Remote Attestation & Sovereign Whistleblower Bounties (Article VIII):** Replaces sole reliance on a single-point-of-failure 60-second heartbeat with a decentralized, multi-layered validation architecture. Every certified silicon die embeds independent, multi-national hardware roots of trust that report concurrently to independent allied intelligence commands. Furthermore, an international fund establishes a permanent $50,000,000 hard-currency Whistleblower Bounty matrix, accompanied by automatic sovereign citizenship protection, for any engineer exposing clandestine general compute builds or firmware hypervisor bypasses.
+*   **Asymmetric Supply-Chain Weaponization & Kinetic Deterrence (Article IX):** Acknowledges advanced lithography as a temporary geopolitical window rather than a permanent fortress. Signatory nations establish a unified industrial mobilization fund to accelerate alternative lithography R&D while actively preparing offensive and kinetic cyber/physical plans to neutralize unauthorized sub-nanometer foundry infrastructure appearing in non-compliant jurisdictions.
 
 
 ---
