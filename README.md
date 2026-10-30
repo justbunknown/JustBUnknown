@@ -1,4 +1,3 @@
-$cleanReadmeText = @"
 # JustBUnknown: Hardware Separation for Frontier AI
 
 An interactive architectural analysis, treaty-enforced simulation sandbox, and multilateral framework designed to eliminate civilization-scale AI risk by permanently decoupling frontier model training from private equity claims.
@@ -63,7 +62,3 @@ This framework incorporates administrative variables modeled after historical no
 
 ### 📜 System Notice
 *This repository represents an interactive governance monograph published by the International Compute Authority (ICA). All system telemetry curves, PUF hardware kill-switch models, and diplomatic brief simulators are operational artifacts under active analysis protocols.*
-"@
-
-$cleanReadmeText | Out-File -FilePath .\README.md -Encoding utf8
-echo "README.md updated, technical installation logs extracted successfully."
