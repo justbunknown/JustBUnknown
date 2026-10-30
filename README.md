@@ -1,5 +1,7 @@
 # JustBUnknown: Hardware Separation for Frontier AI
 
+👉 **[Click Here to Launch the JustBUnknown Terminal Dashboard](https://justbunknown.github.io/JustBUnknown/)**
+
 An interactive architectural analysis, treaty-enforced simulation sandbox, and multilateral framework designed to eliminate civilization-scale AI risk by permanently decoupling frontier model training from private equity claims.
 
 ### 🌐 Operational Telemetry
@@ -15,7 +17,9 @@ The civilization-scale risk associated with frontier artificial intelligence doe
 
 All technical alignment problems can be rolled into Point A. Point A on its own, without Point B, is manageable. Nuclear technology and biological pathogen research both approximate the destructive scale of Point A, yet they remain stable because their structural handlers operate on non-profit charters without a financial jackpot incentive to push their luck on containment safety.
 
-\`\`\`
+
+
+```
           [ THE FRONTIER AI LABORATORY CASINO ]
   ┌───────────────────────────────────────────────────┐
   │  PROPERTY A: Superintelligent Entity Creation     │ ──┐
@@ -31,7 +35,7 @@ All technical alignment problems can be rolled into Point A. Point A on its own,
   ┌───────────────────────────────────────────────────┐
   │  STAGE 02: AI DEPLOYMENT COMPANIES (Civilian)     │ ──► Commercial Market (Immutable Brains)
   └───────────────────────────────────────────────────┘
-\`\`\`
+```
 
 **JustBUnknown** structurally isolates these vectors by codifying a dual-entity institutional split enforced via physical semiconductor design:
 
