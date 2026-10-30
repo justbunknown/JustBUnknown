@@ -17,6 +17,8 @@ export const TakeoffSimulator: React.FC = () => {
   const [dualMemoryRagStandard, setDualMemoryRagStandard] = useState<boolean>(true);
   const [legacyRetrofitAccordActive, setLegacyRetrofitAccordActive] = useState<boolean>(true); // ◄— Insert
   const [computeThresholdAgilityActive, setComputeThresholdAgilityActive] = useState<boolean>(true); // ◄— Insert
+  const [humanFirewallActive, setHumanFirewallActive] = useState<boolean>(true);
+
   const [testHostileSeizure, setTestHostileSeizure] = useState<boolean>(false);
 
   const [currentMonth, setCurrentMonth] = useState<number>(0);
@@ -41,6 +43,7 @@ export const TakeoffSimulator: React.FC = () => {
       setDualMemoryRagStandard(false);
       setLegacyRetrofitAccordActive(false);
       setComputeThresholdAgilityActive(false);
+      setHumanFirewallActive(false);
     } else if (newStrategy === 'planS') {
       setRecursiveRate(1);
       setComputeOverhang(50);
@@ -53,6 +56,7 @@ export const TakeoffSimulator: React.FC = () => {
       setDualMemoryRagStandard(false);
       setLegacyRetrofitAccordActive(false);
       setComputeThresholdAgilityActive(false);
+      setHumanFirewallActive(false);
     } else {
       // JustBUnknown (Ironclad Coercive Architecture)
       setRecursiveRate(2);
@@ -66,6 +70,7 @@ export const TakeoffSimulator: React.FC = () => {
       setDualMemoryRagStandard(true);
       setLegacyRetrofitAccordActive(true);
       setComputeThresholdAgilityActive(true);
+      setHumanFirewallActive(true);
     }
   };
 
@@ -177,14 +182,21 @@ export const TakeoffSimulator: React.FC = () => {
         }
 
         // Takeover probability is crushed to absolute zero when all invariants hold
-        if (heartbeat && tariff && antiDog && latency >= 12 && overhang === 0) {
-          takeoverProb = 0.00; // Complete mathematical & physical zero
+        if (heartbeat && tariff && antiDog && latency >= 12 && overhang === 0 && legacyRetrofitAccordActive && computeThresholdAgilityActive && humanFirewallActive) {
+          takeoverProb = 0.0; // Complete mathematical & physical zero risk
           status = 'Ironclad Hegemony';
         } else {
-          const latentRisk = (overhang * 0.04) + (latency < 6 ? 4 : 0) + (antiDog ? 0 : 8) + (heartbeat ? 0 : 1.5) + (tariff ? 0 : 3.5);
-          takeoverProb = Math.min(2.8, Math.max(0.01, Math.round(latentRisk * 100) / 100));
+          // Calculate dynamic leakage penalty across missing security layers
+          let legacyLeakage = legacyRetrofitAccordActive ? 0.0 : 12.5;
+          let algorithmicOverhangRisk = computeThresholdAgilityActive ? 0.0 : 15.0;
+          let humanLeakageRisk = humanFirewallActive ? 0.0 : 18.5;
+
+          const latentRisk = (overhang * 0.4) + (latency < 12 ? 24 : 0) + (antiDog ? 0 : 8) + legacyLeakage + algorithmicOverhangRisk + humanLeakageRisk;
+
+          takeoverProb = Math.min(99, Math.max(0.01, Math.round(latentRisk * 100) / 100));
           status = 'Equilibrium';
         }
+
 
         // Tremendous economic utility delivered through safe, unhackable ASICs + 100x efficiency
         const economicEfficiencyMultiplier = 1 + (subsidy / 100) * 0.8;
@@ -304,8 +316,8 @@ export const TakeoffSimulator: React.FC = () => {
           <button
             onClick={() => setViewMode('single')}
             className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${viewMode === 'single'
-                ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
+              ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
+              : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
               }`}
           >
             Parametric Sandbox
@@ -313,8 +325,8 @@ export const TakeoffSimulator: React.FC = () => {
           <button
             onClick={() => setViewMode('compare')}
             className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${viewMode === 'compare'
-                ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
+              ? 'bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-100 shadow-sm'
+              : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100'
               }`}
           >
             3-Way Comparative View
@@ -334,8 +346,8 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   onClick={() => handleStrategyChange('planA')}
                   className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planA'
-                      ? 'bg-red-50 dark:bg-red-950/40 border-red-500 text-red-700 dark:text-red-300 shadow-sm'
-                      : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
+                    ? 'bg-red-50 dark:bg-red-950/40 border-red-500 text-red-700 dark:text-red-300 shadow-sm'
+                    : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
                     }`}
                 >
                   Plan A (Status Quo)
@@ -343,8 +355,8 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   onClick={() => handleStrategyChange('planS')}
                   className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planS'
-                      ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
-                      : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
+                    ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
+                    : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
                     }`}
                 >
                   Plan S (Pause)
@@ -352,8 +364,8 @@ export const TakeoffSimulator: React.FC = () => {
                 <button
                   onClick={() => handleStrategyChange('planR')}
                   className={`py-2 px-2 text-xs font-semibold rounded-lg border text-center transition-all cursor-pointer ${strategy === 'planR'
-                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-700 dark:text-emerald-300 shadow-sm'
-                      : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
+                    ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-700 dark:text-emerald-300 shadow-sm'
+                    : 'border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800'
                     }`}
                 >
                   JustBUnknown (ASIC Split)
@@ -492,8 +504,8 @@ export const TakeoffSimulator: React.FC = () => {
                     type="button"
                     onClick={() => setTestHostileSeizure(!testHostileSeizure)}
                     className={`w-full py-1.5 px-2 rounded text-[11px] font-mono font-medium transition-colors cursor-pointer border ${testHostileSeizure
-                        ? 'bg-red-600 text-white border-red-700'
-                        : 'bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 border-stone-300 dark:border-stone-700 hover:bg-stone-50'
+                      ? 'bg-red-600 text-white border-red-700'
+                      : 'bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 border-stone-300 dark:border-stone-700 hover:bg-stone-50'
                       }`}
                   >
                     {testHostileSeizure ? '⚠️ Heartbeat Cut: Silicon Bricked' : '⚡ Simulate Hostile Seizure Breach'}
@@ -612,6 +624,28 @@ export const TakeoffSimulator: React.FC = () => {
                 />
               </button>
             </div>
+            {/* Coercive Lever 7: Compartmentalized Human Firewall */}
+            <div className="flex items-center justify-between mt-4">
+              <div>
+                <div className="text-xs font-semibold text-stone-900 dark:text-stone-100">
+                  Compartmentalized Human Firewall
+                </div>
+                <div className="text-[11px] text-stone-500">
+                  Article XI compartmentalization & escrowed asset tracking
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setHumanFirewallActive(!humanFirewallActive)}
+                className={`w-10 h-5 flex items-center rounded-full p-0.5 transition-colors cursor-pointer ${humanFirewallActive ? 'bg-emerald-600' : 'bg-stone-300 dark:bg-stone-700'
+                  }`}
+              >
+                <div
+                  className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${humanFirewallActive ? 'translate-x-5' : 'translate-x-0'
+                    }`}
+                />
+              </button>
+            </div>
 
             {/* Strategy Explanatory Note */}
             <div className="p-3 bg-stone-200/50 dark:bg-stone-800/40 rounded-lg text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
@@ -715,10 +749,10 @@ export const TakeoffSimulator: React.FC = () => {
                   <div className="text-[11px] font-mono uppercase text-stone-500">Takeover Risk</div>
                   <div
                     className={`text-xl font-bold font-mono tabular-nums mt-1 ${currentTick.takeoverProbability > 50
-                        ? 'text-red-600 dark:text-red-400'
-                        : currentTick.takeoverProbability > 20
-                          ? 'text-amber-600 dark:text-amber-400'
-                          : 'text-emerald-600 dark:text-emerald-400'
+                      ? 'text-red-600 dark:text-red-400'
+                      : currentTick.takeoverProbability > 20
+                        ? 'text-amber-600 dark:text-amber-400'
+                        : 'text-emerald-600 dark:text-emerald-400'
                       }`}
                   >
                     {currentTick.takeoverProbability === 0 ? '0.00%' : `${currentTick.takeoverProbability}%`}

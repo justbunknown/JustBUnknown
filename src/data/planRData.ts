@@ -211,6 +211,12 @@ export const SOVEREIGN_TREATY_CLAUSES = [
     title: 'The Algorithmic Hermetic Seal (Zero-Knowledge Telemetry)',
     body: 'Acknowledges that model weights and training recipes can leak through human or digital vectors. All frontier R&D organizations must operate under a strict "Hermetic Seal": complete isolation of model outputs using advanced Zero-Knowledge (ZK) cryptography. Deployment networks are prohibited from probing model structures; they may only interact with heavily noise-injected, differentially private API endpoints monitored by automated, sovereign-run security nodes.',
     impact: 'Closes the final knowledge-leakage loop. It ensures that even if a model exists inside a physical facility, its underlying intellectual blueprints cannot be reverse-engineered, exfiltrated, or reconstructed by external state intelligence.'
+  },
+  {
+    clauseNumber: 'Article XI Section 1',
+    title: 'The Compartmentalized Human Firewall (Personnel Invariants)',
+    body: 'Abandons naive reliance on non-disclosure agreements. All frontier R&D personnel are subjected to strict state-level compartmentalization protocols modeled after thermonuclear weapon designs: no single team or individual shall ever possess the unified weights, training recipes, and architectural blueprints simultaneously. This is paired with continuous, hostile lifestyle and financial tracking by allied intelligence commands, lifelong escrowed asset forfeiture for unapproved foreign state transit, and a multi-national mutual-monitoring network backed by a mandatory $100,000,000 counter-intelligence whistleblower fund.',
+    impact: 'Neutralizes the human leakage vector by making the personal, social, and financial cost of unauthorized knowledge transfer completely ruinous, while keeping compliant personnel generationally wealthy.'
   }
 
 ];
@@ -275,6 +281,12 @@ export const POLICY_COMPARISON = [
     planA: 'High Drift: Elite engineers move fluidly between labs chasing massive capitalization loops, compounding acceleration pressure.',
     planS: 'Brain Drain: Total prohibitions force elite computer science talent to migrate underground, establishing hidden clusters in shadow states.',
     planR: 'Constrained Wealth: Retains high-upside equity but traps it behind a 10-year safety-milestone cliff, aligning human greed directly with civilizational containment.',
+  },
+  {
+    metric: 'Human Capital & Brain Drain Defection',
+    planA: 'Anarchy: Talent moves unchecked across global networks, trading frontier architectural insights and training weights to the highest bidder.',
+    planS: 'Blind Collapse: Naive reliance on basic NDAs allows critical researchers to walk away with core model intuitions stored entirely in their heads.',
+    planR: 'Iron-Core Compartmentalization: Treats human knowledge as classified national security assets, splitting technical training access across independent national compartments while making leaks personally catastrophic.'
   }
 
 ];
